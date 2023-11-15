@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.tag {
+    background-color: #F6FA70;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+.box {
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.click-button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.click-button p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #FF0060;
+}
+
+.click-button button {
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00DFA2;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 0px #00DFA2,
+        0 0 10px #00DFA2,
+        0 0 20px #00DFA2;
+    transition: 0.5s;
+}
+
+.click-button button:hover {
+    box-shadow: 0 0 0px #00DFA2,
+        0 0 20px #00DFA2,
+        0 0 40px #00DFA2;
+}
+
+.click-button button:active {
+    transform: scale(0.9);
+}
+
+.semangka {
+    animation: semangka 1s linear;
+}
+
+@keyframes semangka {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
